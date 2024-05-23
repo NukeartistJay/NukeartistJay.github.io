@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenjie Zhao's Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #1a1a1a;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill, .project {
+            flex: 1 1 calc(33.333% - 40px);
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info a {
+            display: block;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .responsive-video iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .project img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .skill, .project {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zhenjie Zhao's Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">关于我</a>
+        <a href="#projects">作品</a>
+        <a href="#contact">联系我</a>
+    </nav>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>关于我</h2>
+            <p>你好，我是赵真杰，我是3D动画和视觉特效专业的毕业生。我对动画和视觉特效充满热情，并且喜欢将创意与技术结合，创造出令人惊叹的视觉效果。</p>
+            <h3>教育背景</h3>
+            <p>我于2023年底毕业于Media Design School，获得了艺术与设计学士学位，专业是3D动画和视觉特效。</p>
+        </section>
+        <section id="projects" class="section">
+            <h2>作品</h2>
+            <div class="projects">
+                <div class="project">
+                    <img src="你的图片URL1" alt="Six Concert">
+                    <h3>Six Concert</h3>
+                    <p>描述：这是一个团队项目，展示了我的3D动画和视觉特效技能。</p>
+                </div>
+                <div class="project">
+                    <img src="你的图片URL2" alt="Off the Grid">
+                    <h3>Off the Grid</h3>
+                    <p>描述：另一个团队项目，展示了我的创造力和技术能力。</p>
+                </div>
+                <div class="project">
+                    <img src="你的图片URL3" alt="Interception">
+                    <h3>Interception</h3>
+                    <p>描述：这是我参与的一个项目，重点在于复杂的视觉特效制作。</p>
+                </div>
+            </div>
+            <h3>作品集</h3>
+            <a href="https://www.linkedin.com/posts/zhenjie-zhao-b27907275_activity-7198900898348097537-ZtWH?utm_source=share&utm_medium=member_desktop">点击查看我的作品集</a>
+            <div class="responsive-video">
+                <iframe src="https://drive.google.com/file/d/你的文件ID/preview" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <h2>技能</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>The Foundry Nuke</h3>
+                </div>
+                <div class="skill">
+                    <h3>After Effects</h3>
+                </div>
+                <div class="skill">
+                    <h3>Autodesk Maya</h3>
+                </div>
+                <div class="skill">
+                    <h3>DaVinci</h3>
+                </div>
+                <div class="skill">
+                    <h3>Photoshop</h3>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section">
+            <h2>联系我</h2>
+            <div class="contact-info">
+                <a href="mailto:zhaozhenjie0571@gmail.com">zhaozhenjie0571@gmail.com</a>
+                <a href="https://www.linkedin.com/in/zhenjie-zhao-b27907275">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
