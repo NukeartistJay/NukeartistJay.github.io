@@ -1,75 +1,49 @@
-/* style.css */
-
-/* 全局样式 */
-body {
-    font-family: "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-}
-
-.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* 头部样式 */
-header {
-    background-color: #d50000; /* 红色 */
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* 导航菜单样式 */
-nav {
-    background-color: #ff1744; /* 红色 */
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
-}
-
-/* 主要内容区域样式 */
-.main-content {
-    padding: 40px 0;
-}
-
-/* 项目部分样式 */
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    color: #d50000; /* 红色 */
-}
-
-.project p {
-    color: #666;
-}
-
-/* 联系信息部分样式 */
-.contact-info a {
-    display: block;
-    margin-bottom: 10px;
-    color: #d50000; /* 红色 */
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhenjie Zhao's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zhenjie Zhao's Portfolio</h1>
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I am Zhenjie Zhao, a graduate in 3D Animation and Visual Effects. I have a passion for animation and visual effects and enjoy combining creativity with technology to create stunning visual experiences.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Six Concert</h3>
+                    <p>Description: This is a team project showcasing my skills in 3D animation and visual effects.</p>
+                </div>
+                <div class="project">
+                    <h3>Off the Grid</h3>
+                    <p>Description: Another team project demonstrating my creativity and technical abilities.</p>
+                </div>
+                <div class="project">
+                    <h3>Interception</h3>
+                    <p>Description: A project I participated in, focusing on complex visual effects production.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="mailto:zhaozhenjie0571@gmail.com">zhaozhenjie0571@gmail.com</a>
+                <a href="https://www.linkedin.com/in/zhenjie-zhao-b27907275">LinkedIn</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
